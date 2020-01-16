@@ -1,1 +1,51 @@
 @import "partials/reset", "partials/variables", "partials/mixins";
+
+h1{
+  padding :20px;
+  font-size: 2em;
+}
+
+main{
+  width: 100%;
+  min-height:100vh;
+  @include flex(center, center, column);
+
+}
+section{
+  padding: 20px;
+  border: 2px solid $black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div{
+    display: flex;
+    div{
+      div{
+        border: $black solid 2px;
+        width: 40px;
+        height: 40px;
+        border-radius: 90%;
+        margin: 10px;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  input{
+    width: 100%;
+    height: 40px;
+    color: $white;
+    background: $blue;
+    border-radius: 5px;
+    border: solid $blue 1px;
+    font-size: 1.5em;
+    &:hover
+    {
+      cursor: pointer;
+    }
+  }
+
+}

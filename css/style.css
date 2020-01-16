@@ -69,4 +69,45 @@ a {
   transition-property: background;
   transition-duration: 500ms; }
 
+h1 {
+  padding: 20px;
+  font-size: 2em; }
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+section {
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  section div {
+    display: flex; }
+    section div div div {
+      border: black solid 2px;
+      width: 40px;
+      height: 40px;
+      border-radius: 90%;
+      margin: 10px; }
+      section div div div:hover {
+        cursor: pointer; }
+  section input {
+    width: 100%;
+    height: 40px;
+    color: wheat;
+    background: blue;
+    border-radius: 5px;
+    border: solid blue 1px;
+    font-size: 1.5em; }
+    section input:hover {
+      cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */
