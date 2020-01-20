@@ -90,16 +90,20 @@ section {
   justify-content: center;
   align-items: center; }
   section div {
-    display: flex; }
-    section div div div {
-      border: black solid 2px;
-      width: 40px;
-      height: 40px;
-      border-radius: 90%;
-      margin: 10px; }
-      section div div div:hover {
-        cursor: pointer; }
+    display: flex;
+    flex-direction: column; }
+    section div div {
+      display: inline-block; }
+      section div div .circle {
+        border: black solid 2px;
+        width: 40px;
+        height: 40px;
+        border-radius: 90%;
+        margin: 10px; }
+        section div div .circle:hover {
+          cursor: pointer; }
   section input {
+    margin: 10px 0;
     width: 100%;
     height: 40px;
     color: wheat;

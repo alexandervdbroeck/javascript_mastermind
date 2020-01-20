@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="js/main.js"></script>
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body onload="Initialize()">
 <main><h1>Master-mind</h1>
     <section id="speelveld">
          <div id="oplossing">
-             <div id="rij_sol">
-                 <div id="sol1"></div>
-                 <div id="sol2"></div>
-                 <div id="sol3"></div>
-                 <div id="sol4"></div>
-             </div>
          </div>
          <div id="rijen">
-             <div id="rij_1">
-                <div id="g1_1" onclick=""></div>
-                <div id="g1_2" onclick=""></div>
-                <div id="g1_3" onclick=""></div>
-                <div id="g1_4" onclick=""></div>
-            </div>
+
         </div>
-        <input type="button" onclick="" value="Check">
+        <input type="button" onclick="NewRow()" value="Check">
+        <input type="button" id="toonButton" onclick="ToonOplossing()" value="Toon oplossing">
 
 </section>
 </main>
