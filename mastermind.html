@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 <body onload="Initialize()">
 <main><h1>Master-mind</h1>
@@ -15,7 +20,7 @@
          <div id="rijen">
 
         </div>
-        <input type="button" onclick="NewRow()" value="Check">
+        <input type="button" onclick="NewRow(); CheckAwnser()" value="Check">
         <input type="button" id="toonButton" onclick="ToonOplossing()" value="Toon oplossing">
 
 </section>
